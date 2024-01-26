@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import FichLogement from "./pages/Logement";
 import NoPage from "./pages/Nopage";
+import "./Appstyle.scss"
 
 const App = () => {
   return (

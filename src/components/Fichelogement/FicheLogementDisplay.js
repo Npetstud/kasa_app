@@ -28,48 +28,49 @@ const FicheLogementDisplay = () => {
 
   return (
     <>
+      
       {ficheLogement ? (
-        <div>
+        <div className="Fiche-container">
           <Carrousel slides={ficheLogement?.pictures} />
-          <section>
-            <div>
-              <div>
-                <div>
-                  <span>{ficheLogement?.title}</span>
-                  <span>
+          <section className="Fiche-logement">
+            <div className="description-info">
+              <div className="description-info__titletags">
+                <div className="description-info__titletags__title">
+                  <span className="titre-logement">{ficheLogement?.title}</span>
+                  <span className="endroit-logement">
                     {ficheLogement?.location}
                   </span>
                 </div>
-                
-                <div>
+                {/* Tags */}
+                <div className="description-info__titletags__tags">
                   {tagsLogement}
                 </div>
               </div>
 
-              <div>
-               
-                <div>
+              <div className="description-info__proprietaire">
+                {/* Hosting */}
+                <div className="description-info__proprietaire__nom-prop">
                   <Host
                     name={ficheLogement?.host.name}
                     picture={ficheLogement?.host.picture}
                   />
                 </div>
-                
-                <div>
+                {/* Rating */}
+                <div className="description-info__proprietaire__rate">
                   <Rate score={ficheLogement.rating} />
                 </div>
               </div>
             </div>
           </section>
-          
-          <div>
-            <div>
+          {/* Collapse */}
+          <div className="description-centent">
+            <div className="description-centent__description">
               <Collapse
                 title="Description"
                 content={ficheLogement?.description}
               />
             </div>
-            <div>
+            <div className="description-centent__equipement">
               <Collapse title="Équipements" content={equipements} />
             </div>
           </div>

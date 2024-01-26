@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Flechleft from "../../Asset/Images/Caroussel/flech-left.png";
+import Flechright from "../../Asset/Images/Caroussel/flech-right.svg";
 
 function Carrousel({ slides }) {
   /* Crée un Hook d'état */
@@ -18,15 +20,15 @@ function Carrousel({ slides }) {
     return null;
   }
   return (
-    <section>
+    <section className="slide">
       {length > 1 && (
-        <p onClick={prevImage}>
-          <i class="fa-solid fa-chevron-left"></i>
+        <p className="left-Arrow" onClick={prevImage}>
+          <img src={Flechleft} alt="" />
         </p>
       )}
       {length > 1 && (
-        <p onClick={nextImage}>
-          <i class="fa-solid fa-chevron-right"></i>
+        <p className="right-Arrow" onClick={nextImage}>
+          <img src={Flechright} alt=""/>
         </p>
       )}
       {slides.map((image, index) => {
@@ -36,10 +38,10 @@ function Carrousel({ slides }) {
             className={index === current ? "slider active" : "slider"}
           >
             {index === current && (
-              <img src={image} alt="img-appartement"/>
+              <img src={image} alt="img-appartement" className="slide__image"/>
             )}
             {index === current && length > 1 && (
-              <span>
+              <span className="slider_number">
                 {current + 1}/{length}
               </span>
             )}

@@ -5,7 +5,7 @@ import Header from "../components/Header/header"
 
 const FichLogment = () => {
   return (
-    <div>
+    <div className="logement">
       <Header />
       <main>
         <FicheLogementDisplay />

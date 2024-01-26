@@ -5,7 +5,7 @@ import Card from "../Cards/cards";
 
 const Gallery = () => {
   return (
-    <div>
+    <div className="home_gallery">
       {logements.map((logement) => {
         return (
           <article key={logement.id}>

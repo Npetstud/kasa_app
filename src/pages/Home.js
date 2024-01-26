@@ -7,7 +7,7 @@ import imgHomeBanner from "../Asset/Images/Banner/Image_banner.png";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <Header />
       <main>
         <Banner texte="Chez vous, partout et ailleurs" image={imgHomeBanner} />

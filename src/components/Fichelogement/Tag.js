@@ -2,8 +2,8 @@ import React from "react";
 
 function Tag({ nom }) {
   return (
-    <div>
-      <span>{nom}</span>
+    <div className="tag-container">
+      <span className="tag-container__button">{nom}</span>
     </div>
   );
 }

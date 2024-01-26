@@ -8,13 +8,13 @@ import CollapseData from "../data/Collapse.json";
 
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <Header />
       <main>
         <Banner image={imgBannerAbout} titre="" />
 
-        <div>
-          <div>
+        <div className="collapse">
+          <div className="collapse__dropdown">
             {CollapseData.map((item) => {
               return (
                 <div key={item.id}>
