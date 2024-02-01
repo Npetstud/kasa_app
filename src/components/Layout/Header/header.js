@@ -1,5 +1,5 @@
-import logo from "../../Asset/Images/Logo/LOGO.svg";
-import Nav from "../Navigation/Navbar";
+import logo from "../../../Asset/Images/Logo/LOGO.svg";
+import Nav from "../../Navigation/Navbar";
 
 export default function Header() {
   return (

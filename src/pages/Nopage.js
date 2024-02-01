@@ -1,7 +1,7 @@
 import React from "react";
 import ErrorPage from "../components/ErrorPage/Errorp";
-import Footer from "../components/Footer/footer";
-import Header from "../components/Header/header";
+import Header from "../components/Layout/Header/header";
+import Footer from "../components/Layout/Footer/footer";
 
 const NoPage = () => {
   return (
